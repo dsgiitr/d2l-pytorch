@@ -6,11 +6,11 @@ and all the community contributors. We have made an effort to modify the book an
 
   * **Ch2 The Preliminaries: A Crashcourse**
     * 2.1 [Data_Manipulation](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch2_The_Preliminaries_A_Crashcourse/Data_Manipulation.ipynb)
-    * 2.2 Linear_Algebra
-    * 2.3 Automatic_Differentiation
-    * 2.4 Probability_and_Statistics
-    * 2.5 Naive_Bayes_Classification
-    * 2.6 Documentation
+    * 2.2 [Linear_Algebra](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch2_The_Preliminaries_A_Crashcourse/Linear_Algebra.ipynb)
+    * 2.3 [Automatic_Differentiation](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch2_The_Preliminaries_A_Crashcourse/Automatic_Differentiation.ipynb)
+    * 2.4 [Probability_and_Statistics](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch2_The_Preliminaries_A_Crashcourse/Probability_and_Statistics.ipynb)
+    * 2.5 [Naive_Bayes_Classification](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch2_The_Preliminaries_A_Crashcourse/Naive_Bayes_Classification.ipynb)
+    * 2.6 [Documentation](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch2_The_Preliminaries_A_Crashcourse/Documentation.ipynb)
     
   * **Ch3 Linear Neural Networks**
     * 3.1 Linear_Regression 

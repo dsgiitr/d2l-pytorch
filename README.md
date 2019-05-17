@@ -17,7 +17,7 @@ and all the community contributors. We have made an effort to modify the book an
     * 3.2 Linear_Regression_Implementation_from_Scratch
     * 3.3 Concise_Implementation_of_Linear_Regression
     * 3.4 Softmax_Regression
-    * 3.5 Image_Classification_Data(Fashion-MNIST)
+    * 3.5 [Image_Classification_Data(Fashion-MNIST)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch3_Linear_Neural_Networks/Image_Classification_Data(Fashion-MNIST).ipynb)
     * 3.6 Implementation_of_Softmax_Regression_from_Scratch
     * 3.7 Concise_Implementation_of_Softmax_Regression
 

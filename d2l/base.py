@@ -17,7 +17,7 @@ def try_all_gpus():
     if torch.cuda.is_available():
         devices = []
         for i in range(16):
-            device = torch.device(cuda:i)
+            device = torch.device('cuda:'+str(i))
             devices.append(device)
     else:
         devices = [torch.device('cpu')]

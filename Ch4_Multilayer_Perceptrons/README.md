@@ -1,4 +1,4 @@
-# Multilayer Perceptron
+# Multilayer Perceptrons
 
 In this chapter, we will introduce your first truly deep networks. The simplest deep networks are called multilayer per-
 ceptrons, and they consist of many layers of neurons each fully connected to those in the layer below (from which they

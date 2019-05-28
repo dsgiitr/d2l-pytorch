@@ -44,3 +44,13 @@ If you like this repo and find it useful, please consider (★) starring it, so 
 [1] Original Address of the code repository of the book [Dive Into Deep Learning](https://d2l.ai) ->
 [Github](https://github.com/d2l-ai/d2l-en)
 
+## Cite
+If you use this work or code for your research please cite the original book with the following bibtex entry.
+```
+@book{zhang2019dive,
+    title={Dive into Deep Learning},
+    author={Aston Zhang and Zachary C. Lipton and Mu Li and Alexander J. Smola},
+    note={\url{http://www.d2l.ai}},
+    year={2019}
+}
+```

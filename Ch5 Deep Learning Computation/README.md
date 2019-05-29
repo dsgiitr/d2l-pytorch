@@ -4,4 +4,4 @@ storing, and using GPUs. Throughout this chapter, you will gain important insigh
 models in the following chapters.
 
 ## 5.4 Custom Layers
-## File I/O
+## 5.5 File I/O

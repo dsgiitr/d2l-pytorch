@@ -11,5 +11,3 @@ def corr2d(X, K):
         for j in range(Y.shape[1]):
             Y[i, j] = (X[i: i + h, j: j + w] * K).sum()
 return Y
-
-

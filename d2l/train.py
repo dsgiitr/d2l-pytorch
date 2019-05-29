@@ -1,7 +1,12 @@
+import numpy as np
+import math
+from .base import try_gpu
+from .figure import set_figsize, plt
 
 import torch
 import torch.optim as optim
 
+__all__ = ['evaluate_accuracy', 'train_ch3']
 
 def evaluate_accuracy(data_iter, net):
     """Evaluate accuracy of a model on the given data set."""

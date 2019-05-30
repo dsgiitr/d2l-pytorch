@@ -11,13 +11,13 @@ a firm grasp not just of the concepts but also of the practice of using deep net
 computational performance, scalability and efficiency of our models to subsequent chapters.
 
 ### INDEX
-- Multilayer_Perceptron.ipynb
-- Implementation_of_Multilayer_Perceptron_from_Scratch.ipynb
-- Concise_Implementation_of_Multilayer_Perceptron.ipynb
-- Model_Selection_Underfitting_and_Overfitting.ipynb
-- Weight_Decay.ipynb
-- Dropout.ipynb
-- Forward_Propagation_Backward_Propagation_and_Computational_Graphs.ipynb
-- Numerical_Stability_and_Initialization.ipynb
-- Considering_the_ Environment.ipynb
-- Predicting_House_Prices_on_Kaggle.ipynb
+- Multilayer Perceptron
+- Implementation of Multilayer Perceptron from Scratch
+- Concise Implementation of Multilayer Perceptron
+- Model Selection Underfitting and Overfitting
+- Weight Decay
+- Dropout
+- Forward Propagation Backward Propagation and Computational Graphs
+- Numerical Stability and Initialization
+- Considering the Environment
+- Predicting House Prices on Kaggle

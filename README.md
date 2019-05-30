@@ -43,6 +43,7 @@ If you like this repo and find it useful, please consider (★) starring it, so 
 
 [1] Original Address of the code repository of the book [Dive Into Deep Learning](https://d2l.ai) ->
 [Github](https://github.com/d2l-ai/d2l-en)
+[2] [Deep Learning - The Straight Dope](https://github.com/zackchase/mxnet-the-straight-dope)
 
 ## Cite
 If you use this work or code for your research please cite the original book with the following bibtex entry.

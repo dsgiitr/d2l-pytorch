@@ -21,6 +21,34 @@ and all the community contributors. We have made an effort to modify the book an
     * 3.6 Implementation_of_Softmax_Regression_from_Scratch
     * 3.7 Concise_Implementation_of_Softmax_Regression
 
+  * **Ch4 Multilayer Perceptrons**
+    * 4.1 [Multilayer Perceptron](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch4_Multilayer_Perceptrons/Multilayer_Perceptron.ipynb)
+    * 4.2 Implementation of Multilayer Perceptron from Scratch
+    * 4.3 Concise Implementation of Multilayer Perceptron
+    * 4.4 Model Selection Underfitting and Overfitting
+    * 4.5 Weight Decay
+    * 4.6 [Dropout](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch4_Multilayer_Perceptrons/Dropout.ipynb)
+    * 4.7 [Forward Propagation Backward Propagation and Computational Graphs](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch4_Multilayer_Perceptrons/Forward_Propagation_Backward_Propagation_and_Computational_Graphs.ipynb)
+    * 4.8 [Numerical Stability and Initialization](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch4_Multilayer_Perceptrons/Numerical_Stability_and_Initialization.ipynb)
+    * 4.9 Considering the Environment
+    * 4.10 [Predicting House Prices on Kaggle](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch4_Multilayer_Perceptrons/Predicting_House_Prices_on_Kaggle.ipynb)
+
+  * **Ch5 Deep Learning Computation**
+    * 5.1 Layers and Blocks
+    * 5.2 [Parameter Management](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch5_Deep_Learning_Computation/Parameter_Management.ipynb)
+    * 5.3 [Deferred Initialization](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch5_Deep_Learning_Computation/Deferred_Initialization.ipynb)
+    * 5.4 Custom Layers
+    * 5.5 File I/O
+    * 5.6 GPU's
+
+  * **Ch6 Convolutional Neural Networks**
+    * 6.1 From Dense Layers to Convolutions
+    * 6.2 [Convolutions for Images](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch6_Convolutional_Neural_Networks/Convolutions_For_Images.ipynb)
+    * 6.3 Padding and Stride
+    * 6.4 [Multiple Input and Output Channels](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch6_Convolutional_Neural_Networks/Multiple_Input_and_Output_Channels.ipynb)
+    * 6.5 [Pooling](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch6_Convolutional_Neural_Networks/Pooling.ipynb)
+    * 6.6 Convolutional Neural Networks (LeNet)
+
 ## Contributing
 
   * Please feel free to open a Pull Request to contribute a notebook in PyTorch for the rest of the chapters.

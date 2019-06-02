@@ -6,9 +6,11 @@ and all the community contributors. We have made an effort to modify the book an
 
 ## Chapters
 
-  * **[Ch2 Installation](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch2_Installation/Installation.ipynb))**
+  * **Ch2 Installation**
+    * [Installation](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch2_Installation/Installation.ipynb)
 
-  * **[Ch3 Introduction](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch3_Introduction/Introduction.ipynb))**
+  * **Ch3 Introduction**
+    * [Introduction](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch3_Introduction/Introduction.ipynb)
 
   * **Ch4 The Preliminaries: A Crashcourse**
     * 4.1 [Data_Manipulation](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch4_The_Preliminaries_A_Crashcourse/Data_Manipulation.ipynb)

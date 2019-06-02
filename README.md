@@ -1,8 +1,14 @@
 # d2l-pytorch
+
 This project is inspired of the original [Dive Into Deep Learning](https://d2l.ai) book by Aston Zhang, Zack C. Lipton, Mu Li, Alex J. Smola 
 and all the community contributors. We have made an effort to modify the book and convert the MXnet code snippets into PyTorch.  
 
+
 ## Chapters
+
+  * **[Ch2 Installation](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch2_Installation/Installation.ipynb))**
+
+  * **[Ch3 Introduction](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch3_Introduction/Introduction.ipynb))**
 
   * **Ch4 The Preliminaries: A Crashcourse**
     * 4.1 [Data_Manipulation](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch4_The_Preliminaries_A_Crashcourse/Data_Manipulation.ipynb)
@@ -36,15 +42,15 @@ and all the community contributors. We have made an effort to modify the book an
   * **Ch7 Deep Learning Computation**
     * 7.1 [Layers and Blocks](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch7_Deep_Learning_Computation/Layers_and_Blocks.ipynb)
     * 7.2 [Parameter Management](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch7_Deep_Learning_Computation/Parameter_Management.ipynb)
-    * 7.3 [Deferred Initialization](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch7_Deep_Learning_Computation/Custom_Layers.ipynb)
-    * 7.4 [Custom Layers](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch7_Deep_Learning_Computation/Deferred_Initialization.ipynb)
+    * 7.3 [Deferred Initialization](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch7_Deep_Learning_Computation/Deferred_Initialization.ipynb)
+    * 7.4 [Custom Layers](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch7_Deep_Learning_Computation/Custom_Layers.ipynb)
     * 7.5 [File I/O](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch7_Deep_Learning_Computation/File_I_O.ipynb)
     * 7.6 [GPUs](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch7_Deep_Learning_Computation/GPUs.ipynb)
 
   * **Ch8 Convolutional Neural Networks**
     * 8.1 From Dense Layers to Convolutions
     * 8.2 [Convolutions for Images](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch8_Convolutional_Neural_Networks/Convolutions_For_Images.ipynb)
-    * 8.3 Padding and Stride
+    * 8.3 [Padding and Stride](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch8_Convolutional_Neural_Networks/Padding_and_Stride.ipynb)
     * 8.4 [Multiple Input and Output Channels](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch8_Convolutional_Neural_Networks/Multiple_Input_and_Output_Channels.ipynb)
     * 8.5 [Pooling](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch8_Convolutional_Neural_Networks/Pooling.ipynb)
     * 8.6 [Convolutional Neural Networks (LeNet)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch6_Convolutional_Neural_Networks/Convolutional_Neural_Networks(LeNet).ipynb)
@@ -59,7 +65,6 @@ and all the community contributors. We have made an effort to modify the book an
     * 9.7 Densely Connected Networks (DenseNet) 
 
   * **Ch10 Recurrent Neural Networks**
-
     * 10.1 Sequence Models
     * 10.2 Language Models 
     * 10.3 Recurrent Neural Networks
@@ -81,6 +86,8 @@ and all the community contributors. We have made an effort to modify the book an
 
   * Please feel free to open a Pull Request to contribute a notebook in PyTorch for the rest of the chapters.
 
+  * Strictly follow the naming conventions for the IPython Notebooks and the subsections.
+
   * Also, if you think there's any section that requires more/better explanation, please use the issue tracker to 
     open an issue and let us know about the same. We'll get back as soon as possible.
 
@@ -91,16 +98,20 @@ and all the community contributors. We have made an effort to modify the book an
   * Try not to submit huge pull requests since this makes them hard to understand and incorporate. 
     Better send several smaller ones.
 
+
 ## Support 
 
 If you like this repo and find it useful, please consider (★) starring it, so that it can reach a broader audience.
 
+
 ## References
 
-[1] Original Address of the code repository of the book [Dive Into Deep Learning](https://d2l.ai) ->
-[Github](https://github.com/d2l-ai/d2l-en)
+[1] Original Book [Dive Into Deep Learning](https://d2l.ai) -> [Github Repo](https://github.com/d2l-ai/d2l-en)
 
 [2] [Deep Learning - The Straight Dope](https://github.com/zackchase/mxnet-the-straight-dope)
+
+[3] [PyTorch - MXNet Cheatsheet](https://github.com/zackchase/mxnet-the-straight-dope/blob/master/cheatsheets/pytorch_gluon.md)
+
 
 ## Cite
 If you use this work or code for your research please cite the original book with the following bibtex entry.

@@ -45,6 +45,7 @@ def train_ch3(net, train_iter, test_iter, criterion, num_epochs, batch_size, lr=
 
 
 def train_ch5(net, train_iter, test_iter, criterion, num_epochs, batch_size, device, lr=None):
+    net = net.to(device)
     print('training on', device)
     optimizer = optim.SGD(net.parameters(), lr=lr)
     for epoch in range(num_epochs):

@@ -11,6 +11,7 @@ __all__ = ['evaluate_accuracy', 'train_ch3', 'train_ch5']
 
 def evaluate_accuracy(data_iter, net, device=torch.device('cpu')):
     """Evaluate accuracy of a model on the given data set."""
+    net.eval()  # Switch to evaluation mode for Dropout, BatchNorm etc layers.
     acc_sum, n = torch.Tensor([0]).to(device), 0
     for batch in data_iter:
         features, labels = batch
@@ -50,6 +51,7 @@ def train_ch5(net, train_iter, test_iter, criterion, num_epochs, batch_size, dev
     print('training on', device)
     optimizer = optim.SGD(net.parameters(), lr=lr)
     for epoch in range(num_epochs):
+        net.train() # Switch to training mode
         train_l_sum, train_acc_sum, n, start = 0.0, 0.0, 0, time.time()
         for X, y in train_iter:
             X, y = X.to(device), y.to(device)

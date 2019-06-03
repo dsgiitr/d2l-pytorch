@@ -1,5 +1,6 @@
 import numpy as np
 import math
+import time
 from .base import try_gpu
 from .figure import set_figsize, plt
 

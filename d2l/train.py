@@ -45,7 +45,7 @@ def train_ch3(net, train_iter, test_iter, criterion, num_epochs, batch_size, lr=
               % (epoch + 1, train_l_sum / n, train_acc_sum / n, test_acc))
 
 
-def train_ch5(net, train_iter, test_iter,criterion, num_epochs, batch_size, device,lr=None):
+def train_ch5(net, train_iter, test_iter, criterion, num_epochs, batch_size, device, lr=None):
     """Train and evaluate a model with CPU or GPU."""
     print('training on', device)
     net.to(device)

@@ -62,7 +62,6 @@ def train_ch5(net, train_iter, test_iter, criterion, num_epochs, batch_size, dev
             loss = criterion(y_hat, y)
             loss.backward()
             optimizer.step()
-            
             with torch.no_grad():
                 y = y.long()
                 train_l_sum += loss.float()

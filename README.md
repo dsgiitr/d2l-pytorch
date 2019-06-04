@@ -62,7 +62,7 @@ and all the community contributors. We have made an effort to modify the book an
     * 9.2 Networks Using Blocks (VGG)
     * 9.3 [Network in Network (NiN)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch9_Modern_Convolutional_Networks/Network_in_Network(NiN).ipynb) 
     * 9.4 Networks with Parallel Concatenations (GoogLeNet) 
-    * 9.5 BatchNormalization
+    * 9.5 Batch Normalization
     * 9.6 Residual Networks (ResNet) 
     * 9.7 [Densely Connected Networks (DenseNet)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch9_Modern_Convolutional_Networks/Densely_Connected_Networks_(DenseNet).ipynb) 
 
@@ -74,7 +74,7 @@ and all the community contributors. We have made an effort to modify the book an
     * 10.5 Implementation of Recurrent Neural Networks from Scratch
     * 10.6 Concise Implementation of Recurrent Neural Networks
     * 10.7 Backpropagation Through Time
-    * 10.8 Gated Recurrent Uits (GRU)
+    * 10.8 Gated Recurrent Units (GRU)
     * 10.9 Long Short Term Memory (LSTM)
     * 10.10 Deep Recurrent Neural Networks
     * 10.11 Bidirectional Recurrent Neural Networks

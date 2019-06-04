@@ -71,6 +71,5 @@ def train_ch5(net, train_iter, test_iter, criterion, num_epochs, batch_size, dev
                 n += y.shape[0]
         test_acc = evaluate_accuracy(test_iter, net,device)
          print('epoch %d, loss %.4f, train acc %.3f, test acc %.3f, time %.1f sec'
-              'time %.1f sec'
               % (epoch + 1, train_l_sum/n, train_acc_sum/n, test_acc,
                  time.time() - start))

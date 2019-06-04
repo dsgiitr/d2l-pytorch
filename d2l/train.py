@@ -12,7 +12,7 @@ __all__ = ['evaluate_accuracy', 'train_ch3', 'train_ch5']
 def evaluate_accuracy(data_iter, net, device=torch.device('cpu')):
     """Evaluate accuracy of a model on the given data set."""
     acc_sum,n = torch.tensor([0],dtype=torch.float32,device=device),0
-    for X,y in data_iter:
+    for X, y in data_iter:
         # If device is the GPU, copy the data to the GPU.
         X,y = X.to(device),y.to(device)
         net.eval()

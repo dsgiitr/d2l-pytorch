@@ -55,7 +55,7 @@ def train_ch5(net, train_iter, test_iter, criterion, num_epochs, batch_size, dev
         train_acc_sum = torch.tensor([0.0],dtype=torch.float32,device=device)
         n, start = 0, time.time()
         for X, y in train_iter:
-            net.train()
+            net.train() # Switch to training mode
             
             optimizer.zero_grad()
             X,y = X.to(device),y.to(device) 

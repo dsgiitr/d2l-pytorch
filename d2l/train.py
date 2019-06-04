@@ -9,7 +9,7 @@ import torch.optim as optim
 
 __all__ = ['evaluate_accuracy', 'train_ch3', 'train_ch5']
 
-def evaluate_accuracy(data_iter, net,device=torch.device('cpu')):
+def evaluate_accuracy(data_iter, net, device=torch.device('cpu')):
     """Evaluate accuracy of a model on the given data set."""
     acc_sum,n = torch.tensor([0],dtype=torch.float32,device=device),0
     for X,y in data_iter:

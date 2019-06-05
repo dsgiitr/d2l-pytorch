@@ -55,8 +55,8 @@ def train_ch5(net, train_iter, test_iter, criterion, num_epochs, batch_size, dev
     for epoch in range(num_epochs):
         net.train() # Switch to training mode
         n, start = 0, time.time()
-        train_l_sum = torch.tensor([0.0],dtype=torch.float32,device=device)
-        train_acc_sum = torch.tensor([0.0],dtype=torch.float32,device=device)
+        train_l_sum = torch.tensor([0.0], dtype=torch.float32, device=device)
+        train_acc_sum = torch.tensor([0.0], dtype=torch.float32, device=device)
         for X, y in train_iter:
             optimizer.zero_grad()
             X, y = X.to(device), y.to(device) 
@@ -70,6 +70,6 @@ def train_ch5(net, train_iter, test_iter, criterion, num_epochs, batch_size, dev
                 train_acc_sum += (torch.sum((torch.argmax(y_hat, dim=1) == y))).float()
                 n += y.shape[0]
 
-        test_acc = evaluate_accuracy(test_iter, net,device)
-         print('epoch %d, loss %.4f, train acc %.3f, test acc %.3f, time %.1f sec'
-              % (epoch + 1, train_l_sum/n, train_acc_sum/n, test_acc, time.time() - start))
+        test_acc = evaluate_accuracy(test_iter, net, device) 
+        print('epoch %d, loss %.4f, train acc %.3f, test acc %.3f, time %.1f sec'
+            % (epoch + 1, train_l_sum/n, train_acc_sum/n, test_acc, time.time() - start))

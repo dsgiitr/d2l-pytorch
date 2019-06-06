@@ -61,14 +61,14 @@ and all the community contributors. We have made an effort to modify the book an
     * 9.1 Deep Convolutional Neural Networks (AlexNet) 
     * 9.2 Networks Using Blocks (VGG)
     * 9.3 [Network in Network (NiN)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch9_Modern_Convolutional_Networks/Network_in_Network(NiN).ipynb) 
-    * 9.4 Networks with Parallel Concatenations (GoogLeNet) 
+    * 9.4 [Networks with Parallel Concatenations (GoogLeNet)]((https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch9_Modern_Convolutional_Networks/Networks_with_Parallel_Concatenations_(GoogLeNet).ipynb) 
     * 9.5 Batch Normalization
     * 9.6 Residual Networks (ResNet) 
     * 9.7 [Densely Connected Networks (DenseNet)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch9_Modern_Convolutional_Networks/Densely_Connected_Networks_(DenseNet).ipynb) 
 
   * **Ch10 Recurrent Neural Networks**
     * 10.1 Sequence Models
-    * 10.2 Language Models 
+    * 10.2 [Language Models](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Language_Models.ipynb)
     * 10.3 Recurrent Neural Networks
     * 10.4 Text Preprocessing
     * 10.5 Implementation of Recurrent Neural Networks from Scratch

@@ -34,7 +34,7 @@ and all the community contributors. We have made an effort to modify the book an
     * 6.2 [Implementation of Multilayer Perceptron from Scratch](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch6_Multilayer_Perceptrons/Implementation_of_Multilayer_Perceptron_from_Scratch.ipynb)
     * 6.3 [Concise Implementation of Multilayer Perceptron](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch6_Multilayer_Perceptrons/Concise_Implementation_of_Multilayer_Perceptron.ipynb)
     * 6.4 [Model Selection Underfitting and Overfitting](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch6_Multilayer_Perceptrons/Model_Selection_Underfitting_and_Overfitting.ipynb)
-    * 6.5 Weight Decay
+    * 6.5 [Weight Decay](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch6_Multilayer_Perceptrons/Weight_Decay.ipynb)
     * 6.6 [Dropout](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch6_Multilayer_Perceptrons/Dropout.ipynb)
     * 6.7 [Forward Propagation Backward Propagation and Computational Graphs](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch6_Multilayer_Perceptrons/Forward_Propagation_Backward_Propagation_and_Computational_Graphs.ipynb)
     * 6.8 [Numerical Stability and Initialization](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch6_Multilayer_Perceptrons/Numerical_Stability_and_Initialization.ipynb)
@@ -62,12 +62,12 @@ and all the community contributors. We have made an effort to modify the book an
     * 9.2 Networks Using Blocks (VGG)
     * 9.3 [Network in Network (NiN)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch9_Modern_Convolutional_Networks/Network_in_Network(NiN).ipynb) 
     * 9.4 [Networks with Parallel Concatenations (GoogLeNet)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch9_Modern_Convolutional_Networks/Networks_with_Parallel_Concatenations_(GoogLeNet).ipynb) 
-    * 9.5 Batch Normalization
+    * 9.5 [Batch Normalization](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch9_Modern_Convolutional_Networks/Batch_Normalization.ipynb)
     * 9.6 Residual Networks (ResNet) 
     * 9.7 [Densely Connected Networks (DenseNet)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch9_Modern_Convolutional_Networks/Densely_Connected_Networks_(DenseNet).ipynb) 
 
   * **Ch10 Recurrent Neural Networks**
-    * 10.1 Sequence Models
+    * 10.1 [Sequence Models](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Sequence_Models.ipynb)
     * 10.2 [Language Models](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Language_Models.ipynb)
     * 10.3 Recurrent Neural Networks
     * 10.4 Text Preprocessing

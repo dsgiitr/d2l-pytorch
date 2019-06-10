@@ -8,7 +8,7 @@ from .figure import set_figsize, plt
 import torch
 import torch.optim as optim
 
-__all__ = ['evaluate_accuracy', 'train_ch3', 'train_ch5']
+__all__ = ['evaluate_accuracy', 'squared_loss', 'sgd', 'train_ch3', 'train_ch5']
 
 
 def evaluate_accuracy(data_iter, net, device=torch.device('cpu')):
@@ -24,6 +24,15 @@ def evaluate_accuracy(data_iter, net, device=torch.device('cpu')):
             n += y.shape[0]
     return acc_sum.item()/n
 
+def squared_loss(y_hat, y):
+    """Squared loss."""
+    return (y_hat - y.view(y_hat.shape)).pow(2) / 2
+
+def sgd(params, lr, batch_size):
+    """Mini-batch stochastic gradient descent."""
+    for param in params:
+        param.data.sub_(lr*param.grad/batch_size)
+        param.grad.data.zero_()
 
 def train_ch3(net, train_iter, test_iter, criterion, num_epochs, batch_size, lr=None):
     """Train and evaluate a model with CPU."""
@@ -43,8 +52,8 @@ def train_ch3(net, train_iter, test_iter, criterion, num_epochs, batch_size, lr=
             train_acc_sum += torch.sum((torch.argmax(y_hat, dim=1).type(torch.FloatTensor) == y).detach()).float()
             n += list(y.size())[0]
         test_acc = evaluate_accuracy(test_iter, net)
-        print('epoch %d, loss %.4f, train acc %.3f, test acc %.3f'
-              % (epoch + 1, train_l_sum / n, train_acc_sum / n, test_acc))
+        print('epoch %d, loss %.4f, train acc %.3f, test acc %.3f'\
+            % (epoch + 1, train_l_sum / n, train_acc_sum / n, test_acc))
 
 
 def train_ch5(net, train_iter, test_iter, criterion, num_epochs, batch_size, device, lr=None):
@@ -71,5 +80,5 @@ def train_ch5(net, train_iter, test_iter, criterion, num_epochs, batch_size, dev
                 n += y.shape[0]
 
         test_acc = evaluate_accuracy(test_iter, net, device) 
-        print('epoch %d, loss %.4f, train acc %.3f, test acc %.3f, time %.1f sec'
+        print('epoch %d, loss %.4f, train acc %.3f, test acc %.3f, time %.1f sec'\
             % (epoch + 1, train_l_sum/n, train_acc_sum/n, test_acc, time.time() - start))

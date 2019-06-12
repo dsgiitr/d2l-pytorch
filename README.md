@@ -71,7 +71,7 @@ and all the community contributors. We have made an effort to modify the book an
     * 10.2 [Language Models](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Language_Models.ipynb)
     * 10.3 Recurrent Neural Networks
     * 10.4 [Text Preprocessing](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Text_Preprocessing.ipynb)
-    * 10.5 Implementation of Recurrent Neural Networks from Scratch
+    * 10.5 [Implementation of Recurrent Neural Networks from Scratch](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Implementation_of_Recurrent_Neural_Networks_from_Scratch.ipynb)
     * 10.6 Concise Implementation of Recurrent Neural Networks
     * 10.7 Backpropagation Through Time
     * 10.8 Gated Recurrent Units (GRU)

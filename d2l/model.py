@@ -1,7 +1,7 @@
 """The model module contains neural network building blocks"""
 import torch
 
-__all__ = ['corr2d']
+__all__ = ['corr2d', 'linreg']
 
 def corr2d(X, K):
     """Compute 2D cross-correlation."""
@@ -11,3 +11,7 @@ def corr2d(X, K):
         for j in range(Y.shape[1]):
             Y[i, j] = (X[i: i + h, j: j + w] * K).sum()
     return Y
+
+def linreg(X, w, b):
+	"""Linear regression."""
+	return torch.mm(X,w) + b

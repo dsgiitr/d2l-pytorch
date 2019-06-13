@@ -58,12 +58,12 @@ and all the community contributors. We have made an effort to modify the book an
     * 8.6 [Convolutional Neural Networks (LeNet)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch6_Convolutional_Neural_Networks/Convolutional_Neural_Networks(LeNet).ipynb)
 
   * **Ch9 Modern Convolutional Networks**
-    * 9.1 Deep Convolutional Neural Networks (AlexNet) 
+    * 9.1 [Deep Convolutional Neural Networks (AlexNet)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch9_Modern_Convolutional_Networks/AlexNet.ipynb) 
     * 9.2 Networks Using Blocks (VGG)
     * 9.3 [Network in Network (NiN)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch9_Modern_Convolutional_Networks/Network_in_Network(NiN).ipynb) 
     * 9.4 [Networks with Parallel Concatenations (GoogLeNet)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch9_Modern_Convolutional_Networks/Networks_with_Parallel_Concatenations_(GoogLeNet).ipynb) 
     * 9.5 [Batch Normalization](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch9_Modern_Convolutional_Networks/Batch_Normalization.ipynb)
-    * 9.6 Residual Networks (ResNet) 
+    * 9.6 [Residual Networks (ResNet)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch9_Modern_Convolutional_Networks/Residual_Networks_(ResNet).ipynb) 
     * 9.7 [Densely Connected Networks (DenseNet)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch9_Modern_Convolutional_Networks/Densely_Connected_Networks_(DenseNet).ipynb) 
 
   * **Ch10 Recurrent Neural Networks**
@@ -78,7 +78,7 @@ and all the community contributors. We have made an effort to modify the book an
     * 10.9 Long Short Term Memory (LSTM)
     * 10.10 Deep Recurrent Neural Networks
     * 10.11 Bidirectional Recurrent Neural Networks
-    * 10.12 Machine Translation and DataSets
+    * 10.12 [Machine Translation and DataSets](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Machine_Translation_and_Data_Sets.ipynb)
     * 10.13 Encoder-Decoder Architecture 
     * 10.14 Sequence to Sequence
     * 10.15 Beam Search

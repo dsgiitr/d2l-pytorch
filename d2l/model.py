@@ -1,10 +1,7 @@
 """The model module contains neural network building blocks"""
 import torch
 import torch.nn as nn
-<<<<<<< HEAD
 import torch.nn.functional as F
-=======
->>>>>>> 51e16ef1799c71c2d4aa3ffdd2e9f9bbf506da7a
 
 __all__ = ['corr2d', 'linreg', 'RNNModel']
 
@@ -21,7 +18,6 @@ def linreg(X, w, b):
 	"""Linear regression."""
 	return torch.mm(X,w) + b
 
-<<<<<<< HEAD
 class RNNModel(nn.Module):
     """RNN model."""
 
@@ -43,7 +39,7 @@ class RNNModel(nn.Module):
     def begin_state(self, num_hiddens, device, batch_size=1):
         """Return the begin state"""
         return torch.zeros(size=(1, batch_size, num_hiddens), dtype=torch.int64, device=device)
-=======
+        
 class Residual(nn.Module):
   
   def __init__(self,input_channels, num_channels, use_1x1conv=False, strides=1, **kwargs):
@@ -67,4 +63,3 @@ class Residual(nn.Module):
     Y += X
     Y =self.relu(Y)
     return Y
->>>>>>> 51e16ef1799c71c2d4aa3ffdd2e9f9bbf506da7a

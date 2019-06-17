@@ -13,28 +13,28 @@ and all the community contributors. We have made an effort to modify the book an
     * [Introduction](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch3_Introduction/Introduction.ipynb)
 
   * **Ch4 The Preliminaries: A Crashcourse**
-    * 4.1 [Data_Manipulation](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch4_The_Preliminaries_A_Crashcourse/Data_Manipulation.ipynb)
-    * 4.2 [Linear_Algebra](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch4_The_Preliminaries_A_Crashcourse/Linear_Algebra.ipynb)
-    * 4.3 [Automatic_Differentiation](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch4_The_Preliminaries_A_Crashcourse/Automatic_Differentiation.ipynb)
-    * 4.4 [Probability_and_Statistics](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch4_The_Preliminaries_A_Crashcourse/Probability_and_Statistics.ipynb)
-    * 4.5 [Naive_Bayes_Classification](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch4_The_Preliminaries_A_Crashcourse/Naive_Bayes_Classification.ipynb)
+    * 4.1 [Data Manipulation](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch4_The_Preliminaries_A_Crashcourse/Data_Manipulation.ipynb)
+    * 4.2 [Linear Algebra](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch4_The_Preliminaries_A_Crashcourse/Linear_Algebra.ipynb)
+    * 4.3 [Automatic Differentiation](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch4_The_Preliminaries_A_Crashcourse/Automatic_Differentiation.ipynb)
+    * 4.4 [Probability and Statistics](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch4_The_Preliminaries_A_Crashcourse/Probability_and_Statistics.ipynb)
+    * 4.5 [Naive Bayes Classification](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch4_The_Preliminaries_A_Crashcourse/Naive_Bayes_Classification.ipynb)
     * 4.6 [Documentation](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch4_The_Preliminaries_A_Crashcourse/Documentation.ipynb)
     
   * **Ch5 Linear Neural Networks**
-    * 5.1 Linear_Regression 
-    * 5.2 Linear_Regression_Implementation_from_Scratch
-    * 5.3 Concise_Implementation_of_Linear_Regression
-    * 5.4 Softmax_Regression
-    * 5.5 [Image_Classification_Data(Fashion-MNIST)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch5_Linear_Neural_Networks/Image_Classification_Data(Fashion-MNIST).ipynb)
-    * 5.6 Implementation_of_Softmax_Regression_from_Scratch
-    * 5.7 Concise_Implementation_of_Softmax_Regression
+    * 5.1 [Linear Regression](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch5_Linear_Neural_Networks/Linear_Regression.ipynb)
+    * 5.2 [Linear Regression Implementation from Scratch](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch5_Linear_Neural_Networks/Linear_Regression_Implementation_from_Scratch.ipynb)
+    * 5.3 Concise Implementation of Linear Regression
+    * 5.4 [Softmax Regression](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch5_Linear_Neural_Networks/Softmax_Regression.ipynb)
+    * 5.5 [Image Classification Data (Fashion-MNIST)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch5_Linear_Neural_Networks/Image_Classification_Data(Fashion-MNIST).ipynb)
+    * 5.6 Implementation of Softmax Regression from Scratch
+    * 5.7 Concise Implementation of Softmax Regression
 
   * **Ch6 Multilayer Perceptrons**
     * 6.1 [Multilayer Perceptron](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch6_Multilayer_Perceptrons/Multilayer_Perceptron.ipynb)
     * 6.2 [Implementation of Multilayer Perceptron from Scratch](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch6_Multilayer_Perceptrons/Implementation_of_Multilayer_Perceptron_from_Scratch.ipynb)
     * 6.3 [Concise Implementation of Multilayer Perceptron](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch6_Multilayer_Perceptrons/Concise_Implementation_of_Multilayer_Perceptron.ipynb)
     * 6.4 [Model Selection Underfitting and Overfitting](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch6_Multilayer_Perceptrons/Model_Selection_Underfitting_and_Overfitting.ipynb)
-    * 6.5 Weight Decay
+    * 6.5 [Weight Decay](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch6_Multilayer_Perceptrons/Weight_Decay.ipynb)
     * 6.6 [Dropout](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch6_Multilayer_Perceptrons/Dropout.ipynb)
     * 6.7 [Forward Propagation Backward Propagation and Computational Graphs](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch6_Multilayer_Perceptrons/Forward_Propagation_Backward_Propagation_and_Computational_Graphs.ipynb)
     * 6.8 [Numerical Stability and Initialization](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch6_Multilayer_Perceptrons/Numerical_Stability_and_Initialization.ipynb)
@@ -58,27 +58,27 @@ and all the community contributors. We have made an effort to modify the book an
     * 8.6 [Convolutional Neural Networks (LeNet)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch6_Convolutional_Neural_Networks/Convolutional_Neural_Networks(LeNet).ipynb)
 
   * **Ch9 Modern Convolutional Networks**
-    * 9.1 Deep Convolutional Neural Networks (AlexNet) 
+    * 9.1 [Deep Convolutional Neural Networks (AlexNet)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch9_Modern_Convolutional_Networks/AlexNet.ipynb) 
     * 9.2 Networks Using Blocks (VGG)
-    * 9.3 Network in Network (NiN) 
-    * 9.4 Networks with Parallel Concatenations (GoogLeNet) 
-    * 9.5 BatchNormalization
-    * 9.6 Residual Networks (ResNet) 
-    * 9.7 Densely Connected Networks (DenseNet) 
+    * 9.3 [Network in Network (NiN)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch9_Modern_Convolutional_Networks/Network_in_Network(NiN).ipynb) 
+    * 9.4 [Networks with Parallel Concatenations (GoogLeNet)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch9_Modern_Convolutional_Networks/Networks_with_Parallel_Concatenations_(GoogLeNet).ipynb) 
+    * 9.5 [Batch Normalization](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch9_Modern_Convolutional_Networks/Batch_Normalization.ipynb)
+    * 9.6 [Residual Networks (ResNet)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch9_Modern_Convolutional_Networks/Residual_Networks_(ResNet).ipynb) 
+    * 9.7 [Densely Connected Networks (DenseNet)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch9_Modern_Convolutional_Networks/Densely_Connected_Networks_(DenseNet).ipynb) 
 
   * **Ch10 Recurrent Neural Networks**
-    * 10.1 Sequence Models
-    * 10.2 Language Models 
+    * 10.1 [Sequence Models](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Sequence_Models.ipynb)
+    * 10.2 [Language Models](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Language_Models.ipynb)
     * 10.3 Recurrent Neural Networks
-    * 10.4 Text Preprocessing
-    * 10.5 Implementation of Recurrent Neural Networks from Scratch
+    * 10.4 [Text Preprocessing](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Text_Preprocessing.ipynb)
+    * 10.5 [Implementation of Recurrent Neural Networks from Scratch](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Implementation_of_Recurrent_Neural_Networks_from_Scratch.ipynb)
     * 10.6 Concise Implementation of Recurrent Neural Networks
     * 10.7 Backpropagation Through Time
-    * 10.8 Gated Recurrent Uits (GRU)
+    * 10.8 Gated Recurrent Units (GRU)
     * 10.9 Long Short Term Memory (LSTM)
     * 10.10 Deep Recurrent Neural Networks
     * 10.11 Bidirectional Recurrent Neural Networks
-    * 10.12 Machine Translation and DataSets
+    * 10.12 [Machine Translation and DataSets](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Machine_Translation_and_Data_Sets.ipynb)
     * 10.13 Encoder-Decoder Architecture 
     * 10.14 Sequence to Sequence
     * 10.15 Beam Search

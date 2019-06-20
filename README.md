@@ -59,7 +59,7 @@ and all the community contributors. We have made an effort to modify the book an
 
   * **Ch09 Modern Convolutional Networks**
     * 9.1 [Deep Convolutional Neural Networks (AlexNet)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch09_Modern_Convolutional_Networks/AlexNet.ipynb) 
-    * 9.2 Networks Using Blocks (VGG)
+    * 9.2 [Networks Using Blocks (VGG)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch09_Modern_Convolutional_Networks/VGG.ipynb)
     * 9.3 [Network in Network (NiN)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch09_Modern_Convolutional_Networks/Network_in_Network(NiN).ipynb) 
     * 9.4 [Networks with Parallel Concatenations (GoogLeNet)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch09_Modern_Convolutional_Networks/Networks_with_Parallel_Concatenations_(GoogLeNet).ipynb) 
     * 9.5 [Batch Normalization](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch09_Modern_Convolutional_Networks/Batch_Normalization.ipynb)
@@ -74,14 +74,14 @@ and all the community contributors. We have made an effort to modify the book an
     * 10.5 [Implementation of Recurrent Neural Networks from Scratch](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Implementation_of_Recurrent_Neural_Networks_from_Scratch.ipynb)
     * 10.6 [Concise Implementation of Recurrent Neural Networks](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Concise_Implementation_of_Recurrent_Neural_Networks.ipynb)
     * 10.7 Backpropagation Through Time
-    * 10.8 Gated Recurrent Units (GRU)
+    * 10.8 [Gated Recurrent Units (GRU)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Gated_Recurrent_Units_(GRU).ipynb)
     * 10.9 Long Short Term Memory (LSTM)
     * 10.10 Deep Recurrent Neural Networks
     * 10.11 Bidirectional Recurrent Neural Networks
     * 10.12 [Machine Translation and DataSets](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Machine_Translation_and_Data_Sets.ipynb)
     * 10.13 Encoder-Decoder Architecture 
     * 10.14 Sequence to Sequence
-    * 10.15 Beam Search
+    * 10.15 [Beam Search](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Beam_Search.ipynb)
 
 
 ## Contributing

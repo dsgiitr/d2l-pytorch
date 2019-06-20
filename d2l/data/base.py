@@ -46,7 +46,7 @@ def data_iter_consecutive(corpus_indices, batch_size, num_steps, ctx=None):
     offset = int(random.uniform(0,num_steps))
     # Slice out data - ignore num_steps and just wrap around
     num_indices = ((len(corpus_indices) - offset) // batch_size) * batch_size
-    indices = torch.Tensor(corpus_indices[offset:(offset + num_indices)], device=ctx)
+    indices = torch.tensor(corpus_indices[offset:(offset + num_indices)], dtype=torch.float32, device=ctx)
     indices = indices.reshape((batch_size,-1))
     # Need to leave one last token since targets are shifted by 1
     num_epochs = ((num_indices // batch_size) - 1) // num_steps

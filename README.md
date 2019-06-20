@@ -1,7 +1,9 @@
 # d2l-pytorch
 
 This project is inspired of the original [Dive Into Deep Learning](https://d2l.ai) book by Aston Zhang, Zack C. Lipton, Mu Li, Alex J. Smola 
-and all the community contributors. We have made an effort to modify the book and convert the MXnet code snippets into PyTorch.  
+and all the community contributors. We have made an effort to modify the book and convert the MXnet code snippets into PyTorch.
+
+Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `cloning` the repo or using [nbviewer](https://nbviewer.jupyter.org/) to view the notebooks.
 
 
 ## Chapters
@@ -74,7 +76,7 @@ and all the community contributors. We have made an effort to modify the book an
     * 10.5 [Implementation of Recurrent Neural Networks from Scratch](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Implementation_of_Recurrent_Neural_Networks_from_Scratch.ipynb)
     * 10.6 [Concise Implementation of Recurrent Neural Networks](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Concise_Implementation_of_Recurrent_Neural_Networks.ipynb)
     * 10.7 Backpropagation Through Time
-    * 10.8 [Gated Recurrent Units (GRU)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Gated_Recurrent_Units_(GRU).ipynb)
+    * 10.8 [Gated Recurrent Units (GRU)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Gated_Recurrent_Units.ipynb)
     * 10.9 Long Short Term Memory (LSTM)
     * 10.10 Deep Recurrent Neural Networks
     * 10.11 Bidirectional Recurrent Neural Networks

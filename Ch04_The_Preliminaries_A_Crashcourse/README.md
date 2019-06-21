@@ -13,9 +13,9 @@ Next, machine learning is concerned with making predictions: *what is the likely
 To conclude the chapter, we will present your first basic classifier, *Naive Bayes*.
 
 ### INDEX
-- Data_Manipulation.ipynb
-- Linear_Algebra.ipynb
-- Automatic_Differentiation.ipynb
-- Probability_and_Statistics.ipynb
-- Naive_Bayes_Classification.ipynb
-- Documentation.ipynb
+- Data Manipulation
+- Linear Algebra
+- Automatic Differentiation
+- Probability and Statistics
+- Naive Bayes Classification
+- Documentation

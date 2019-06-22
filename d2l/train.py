@@ -184,10 +184,10 @@ def predict_rnn(prefix, num_chars, rnn, params, init_rnn_state,
             output.append(int(Y[0].argmax(dim=1).item()))
     return ''.join([vocab.idx_to_token[i] for i in output])
 
-def predict_rnn_nn(prefix, num_chars, batch_size, num_hiddens, model, vocab, device):
+def predict_rnn_nn(prefix, num_chars, batch_size, num_hiddens, num_layers, model, vocab, device):
     """Predict next chars with a RNN model."""
     # Use the model's member function to initialize the hidden state
-    state = model.begin_state(num_hiddens=num_hiddens, device=device)
+    state = model.begin_state(num_hiddens=num_hiddens, device=device, num_layers=num_layers)
     output = [vocab[prefix[0]]]
     for t in range(num_chars + len(prefix) - 1):
         X = torch.tensor([output[-1]], dtype=torch.float32, device=device).reshape((1, 1))
@@ -201,7 +201,7 @@ def predict_rnn_nn(prefix, num_chars, batch_size, num_hiddens, model, vocab, dev
 
 def train_and_predict_rnn_nn(model, num_hiddens, init_gru_state, corpus_indices, vocab,
                                 device, num_epochs, num_steps, lr,
-                                clipping_theta, batch_size, prefixes):
+                                clipping_theta, batch_size, prefixes, num_layers=1):
     """Train a RNN model and predict the next item in the sequence."""
     loss =  nn.CrossEntropyLoss()
     optm = torch.optim.SGD(model.parameters(), lr=lr)
@@ -210,7 +210,7 @@ def train_and_predict_rnn_nn(model, num_hiddens, init_gru_state, corpus_indices,
         l_sum, n = 0.0, 0
         data_iter = data_iter_consecutive(
             corpus_indices, batch_size, num_steps, device)
-        state = model.begin_state(batch_size=batch_size, num_hiddens=num_hiddens, device=device)
+        state = model.begin_state(batch_size=batch_size, num_hiddens=num_hiddens, device=device ,num_layers=num_layers)
         for X, Y in data_iter:
             for s in state:
                 s.detach()
@@ -235,5 +235,4 @@ def train_and_predict_rnn_nn(model, num_hiddens, init_gru_state, corpus_indices,
             start = time.time()
         if epoch % (num_epochs // 2) == 0:
             for prefix in prefixes:
-                print(' -', predict_rnn_nn(prefix, 50, batch_size, num_hiddens, model, vocab, device))
-
+                print(' -', predict_rnn_nn(prefix, 50, batch_size, num_hiddens, num_layers, model, vocab, device))

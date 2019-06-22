@@ -31,14 +31,17 @@ class RNNModel(nn.Module):
         """Forward function"""
         X = F.one_hot(inputs.long().transpose(0,-1), self.vocab_size)
         X = X.to(torch.float32)
-        state = state.to(torch.float32)
         Y, state = self.rnn(X, state)
         output = self.Linear(Y.reshape((-1, Y.shape[-1])))
         return output, state
 
-    def begin_state(self, num_hiddens, device, batch_size=1):
+    def begin_state(self, num_hiddens, device, batch_size=1, num_layers=1):
         """Return the begin state"""
-        return torch.zeros(size=(1, batch_size, num_hiddens), dtype=torch.int64, device=device)
+        if num_layers == 1:
+          return  torch.zeros(size=(1, batch_size, num_hiddens), dtype=torch.float32, device=device)
+        else:
+          return (torch.zeros(size=(1, batch_size, num_hiddens), dtype=torch.float32, device=device),
+                  torch.zeros(size=(1, batch_size, num_hiddens), dtype=torch.float32, device=device))
         
 class Residual(nn.Module):
   

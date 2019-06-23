@@ -77,7 +77,7 @@ Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `
     * 10.6 [Concise Implementation of Recurrent Neural Networks](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Concise_Implementation_of_Recurrent_Neural_Networks.ipynb)
     * 10.7 Backpropagation Through Time
     * 10.8 [Gated Recurrent Units (GRU)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Gated_Recurrent_Units.ipynb)
-    * 10.9 Long Short Term Memory (LSTM)
+    * 10.9 [Long Short Term Memory (LSTM)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Long_Short_Term_Memory.ipynb)
     * 10.10 Deep Recurrent Neural Networks
     * 10.11 Bidirectional Recurrent Neural Networks
     * 10.12 [Machine Translation and DataSets](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Machine_Translation_and_Data_Sets.ipynb)

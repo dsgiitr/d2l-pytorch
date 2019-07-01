@@ -2,6 +2,8 @@
   <img width="60%" src="https://drive.google.com/uc?export=view&id=1r8JrBO8m-eeHtOL-dYNDWEhJC26nuqhz" />
 </p>
 
+-----------------------------------------------------------------------------------------------------------
+
 This project is inspired of the original [Dive Into Deep Learning](https://d2l.ai) book by Aston Zhang, Zack C. Lipton, Mu Li, Alex J. Smola 
 and all the community contributors. We have made an effort to modify the book and convert the MXnet code snippets into PyTorch.
 

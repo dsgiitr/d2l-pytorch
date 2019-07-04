@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-__all__ = ['corr2d', 'linreg', 'RNNModel']
+__all__ = ['corr2d', 'linreg', 'RNNModel' , 'Encoder', 'Decoder', 'EncoderDecoder']
 
 def corr2d(X, K):
     """Compute 2D cross-correlation."""
@@ -63,3 +63,39 @@ class Residual(nn.Module):
     Y += X
     Y =self.relu(Y)
     return Y
+
+class Encoder(nn.Module):
+    """The base encoder interface for the encoder-decoder architecture."""
+    def __init__(self, **kwargs):
+        super(Encoder, self).__init__(**kwargs)
+
+    def forward(self, X, *args):
+        """Forward function"""
+        raise NotImplementedError
+
+class Decoder(nn.Module):
+    """The base decoder interface for the encoder-decoder archtecture."""
+    def __init__(self, **kwargs):
+        super(Decoder, self).__init__(**kwargs)
+
+    def init_state(self, enc_outputs, *args):
+        """Return the begin state"""
+        raise NotImplementedError
+
+    def forward(self, X, state):
+        """Forward function"""
+        raise NotImplementedError
+
+class EncoderDecoder(nn.Module):
+    """The base class for the encoder-decoder architecture."""
+    def __init__(self, encoder, decoder, **kwargs):
+        super(EncoderDecoder, self).__init__(**kwargs)
+        self.encoder = encoder
+        self.decoder = decoder
+
+    def forward(self, enc_X, dec_X, *args):
+        """Forward function"""
+        enc_outputs = self.encoder(enc_X, *args)
+        dec_state = self.decoder.init_state(enc_outputs, *args)
+        return self.decoder(dec_X, dec_state)
+

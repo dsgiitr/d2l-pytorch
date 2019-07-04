@@ -11,7 +11,7 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
 
-__all__ = ['evaluate_accuracy', 'squared_loss', 'grad_clipping', 'sgd', 'train_and_predict_rnn', 'train_ch3', 'train_ch5', 'to_onehot' , 'predict_rnn', 'train_and_predict_rnn_nn', 'predict_rnn_nn', 'grad_clipping_nn']
+__all__ = ['evaluate_accuracy', 'squared_loss', 'grad_clipping', 'sgd', 'train_and_predict_rnn', 'train_ch3', 'train_ch5','MaskedSoftmaxCELoss','train_ch7', 'translate_ch7', 'to_onehot' , 'predict_rnn', 'train_and_predict_rnn_nn', 'predict_rnn_nn', 'grad_clipping_nn']
 
 
 def evaluate_accuracy(data_iter, net, device=torch.device('cpu')):
@@ -158,6 +158,65 @@ def train_ch5(net, train_iter, test_iter, criterion, num_epochs, batch_size, dev
         test_acc = evaluate_accuracy(test_iter, net, device) 
         print('epoch %d, loss %.4f, train acc %.3f, test acc %.3f, time %.1f sec'\
             % (epoch + 1, train_l_sum/n, train_acc_sum/n, test_acc, time.time() - start))
+
+class MaskedSoftmaxCELoss(nn.CrossEntropyLoss):
+    def forward(self, pred, label, valid_length):
+        # the sample weights shape should be (batch_size, seq_len)
+        weights = torch.ones_like(label)
+        weights = SequenceMask(weights, valid_length).float()
+        self.reduction='none'
+        output=super(MaskedSoftmaxCELoss, self).forward(pred.transpose(1,2), label)
+        return (output*weights).mean(dim=1)
+
+
+def train_ch7(model, data_iter, lr, num_epochs, device): 
+    """Train an encoder-decoder model"""
+    optimizer = optim.Adam(model.parameters(), lr=lr)
+    loss = MaskedSoftmaxCELoss()
+    tic = time.time()
+    for epoch in range(1, num_epochs+1):
+        l_sum, num_tokens_sum = 0.0, 0.0
+        for batch in data_iter:
+            optimizer.zero_grad()
+            X, X_vlen, Y, Y_vlen = [x.to(device) for x in batch]
+            Y_input, Y_label, Y_vlen = Y[:,:-1], Y[:,1:], Y_vlen-1
+            Y_hat, _ = model(X, Y_input, X_vlen, Y_vlen)
+            l = loss(Y_hat, Y_label, Y_vlen).sum()
+            l.backward()
+            with torch.no_grad():
+                grad_clipping_nn(model, 5, device)
+            num_tokens = Y_vlen.sum().item()
+            optimizer.step()
+            l_sum += l.sum().item()
+            num_tokens_sum += num_tokens
+        if epoch % 50 == 0:
+            print("epoch {0:4d},loss {1:.3f}, time {2:.1f} sec".format( 
+                  epoch, (l_sum/num_tokens_sum), time.time()-tic))
+            tic = time.time()
+
+def translate_ch7(model, src_sentence, src_vocab, tgt_vocab, max_len, device):
+    """Translate based on an encoder-decoder model with greedy search."""
+    src_tokens = src_vocab[src_sentence.lower().split(' ')]
+    src_len = len(src_tokens)
+    if src_len < max_len:
+        src_tokens += [src_vocab.pad] * (max_len - src_len)
+    enc_X = torch.tensor(src_tokens, device=device)
+    enc_valid_length = torch.tensor([src_len], device=device)
+    # use expand_dim to add the batch_size dimension.
+    enc_outputs = model.encoder(enc_X.unsqueeze(dim=0), enc_valid_length)
+    dec_state = model.decoder.init_state(enc_outputs, enc_valid_length)
+    dec_X = torch.tensor([tgt_vocab.bos], device=device).unsqueeze(dim=0)
+    predict_tokens = []
+    for _ in range(max_len):
+        Y, dec_state = model.decoder(dec_X, dec_state)
+        # The token with highest score is used as the next time step input.
+        dec_X = Y.argmax(dim=2)
+        py = dec_X.squeeze(dim=0).int().item()
+        if py == tgt_vocab.eos:
+            break
+        predict_tokens.append(py)
+    return ' '.join(tgt_vocab.to_tokens(predict_tokens))
+
 
 def to_onehot(X,size):
     return F.one_hot(X.long().transpose(0,-1), size)

@@ -2,3 +2,4 @@
 
 from .fashion_mnist import *
 from .base import *
+from .nmt import *

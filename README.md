@@ -86,7 +86,7 @@ Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `
     * 10.11 Bidirectional Recurrent Neural Networks
     * 10.12 [Machine Translation and DataSets](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Machine_Translation_and_Data_Sets.ipynb)
     * 10.13 Encoder-Decoder Architecture 
-    * 10.14 Sequence to Sequence
+    * 10.14 [Sequence to Sequence](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Sequence_to_Sequence.ipynb)
     * 10.15 [Beam Search](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Beam_Search.ipynb)
 
 

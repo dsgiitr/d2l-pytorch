@@ -89,6 +89,22 @@ Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `
     * 10.14 [Sequence to Sequence](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Sequence_to_Sequence.ipynb)
     * 10.15 [Beam Search](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Beam_Search.ipynb)
 
+  * **Ch11 Attention Mechanism**
+    * 11.1 Attention Mechanism
+    * 11.2 Sequence to Sequence with Attention Mechanism
+    * 11.3 Transformer
+
+  * **Ch12 Optimization Algorithms**
+    * 11.1 Optimization and Deep Learning
+    * 11.2 Convexity
+    * 11.3 Gradient Descent
+    * 11.4 Stochastic Gradient Descent
+    * 11.5 Mini-batch Stochastic Gradient Descent
+    * 11.6 Momentum
+    * 11.7 Adagrad
+    * 11.8 RMSProp
+    * 11.9 Adadelta
+    * 11.10 Adam
 
 ## Contributing
 

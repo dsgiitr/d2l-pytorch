@@ -56,7 +56,7 @@ Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `
     * 7.6 [GPUs](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch07_Deep_Learning_Computation/GPUs.ipynb)
 
   * **Ch08 Convolutional Neural Networks**
-    * 8.1 From Dense Layers to Convolutions
+    * 8.1 [From Dense Layers to Convolutions](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch08_Convolutional_Neural_Networks/From_Dense_Layers_to_Convolutions.ipynb)
     * 8.2 [Convolutions for Images](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch08_Convolutional_Neural_Networks/Convolutions_For_Images.ipynb)
     * 8.3 [Padding and Stride](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch08_Convolutional_Neural_Networks/Padding_and_Stride.ipynb)
     * 8.4 [Multiple Input and Output Channels](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch08_Convolutional_Neural_Networks/Multiple_Input_and_Output_Channels.ipynb)

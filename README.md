@@ -95,16 +95,16 @@ Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `
     * 11.3 Transformer
 
   * **Ch12 Optimization Algorithms**
-    * 11.1 Optimization and Deep Learning
-    * 11.2 Convexity
-    * 11.3 Gradient Descent
-    * 11.4 Stochastic Gradient Descent
-    * 11.5 Mini-batch Stochastic Gradient Descent
-    * 11.6 Momentum
-    * 11.7 Adagrad
-    * 11.8 RMSProp
-    * 11.9 Adadelta
-    * 11.10 Adam
+    * 12.1 [Optimization and Deep Learning](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch12_Optimization_Algorithms/Optimization_And_Deep_Learning.ipynb)
+    * 12.2 Convexity
+    * 12.3 Gradient Descent
+    * 12.4 Stochastic Gradient Descent
+    * 12.5 Mini-batch Stochastic Gradient Descent
+    * 12.6 Momentum
+    * 12.7 Adagrad
+    * 12.8 RMSProp
+    * 12.9 Adadelta
+    * 12.10 Adam
 
 ## Contributing
 

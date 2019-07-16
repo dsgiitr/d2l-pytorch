@@ -79,13 +79,13 @@ Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `
     * 10.4 [Text Preprocessing](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Text_Preprocessing.ipynb)
     * 10.5 [Implementation of Recurrent Neural Networks from Scratch](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Implementation_of_Recurrent_Neural_Networks_from_Scratch.ipynb)
     * 10.6 [Concise Implementation of Recurrent Neural Networks](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Concise_Implementation_of_Recurrent_Neural_Networks.ipynb)
-    * 10.7 Backpropagation Through Time
+    * 10.7 [Backpropagation Through Time](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Backpropagation_Through_Time.ipynb)
     * 10.8 [Gated Recurrent Units (GRU)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Gated_Recurrent_Units.ipynb)
     * 10.9 [Long Short Term Memory (LSTM)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Long_Short_Term_Memory.ipynb)
-    * 10.10 Deep Recurrent Neural Networks
+    * 10.10 [Deep Recurrent Neural Networks](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Deep_Recurrent_Neural_Networks.ipynb)
     * 10.11 Bidirectional Recurrent Neural Networks
     * 10.12 [Machine Translation and DataSets](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Machine_Translation_and_Data_Sets.ipynb)
-    * 10.13 Encoder-Decoder Architecture 
+    * 10.13 [Encoder-Decoder Architecture](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Encoder-Decoder_Architecture.ipynb) 
     * 10.14 [Sequence to Sequence](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Sequence_to_Sequence.ipynb)
     * 10.15 [Beam Search](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Beam_Search.ipynb)
 
@@ -95,16 +95,16 @@ Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `
     * 11.3 Transformer
 
   * **Ch12 Optimization Algorithms**
-    * 11.1 Optimization and Deep Learning
-    * 11.2 Convexity
-    * 11.3 Gradient Descent
-    * 11.4 Stochastic Gradient Descent
-    * 11.5 Mini-batch Stochastic Gradient Descent
-    * 11.6 Momentum
-    * 11.7 Adagrad
-    * 11.8 RMSProp
-    * 11.9 Adadelta
-    * 11.10 Adam
+    * 12.1 [Optimization and Deep Learning](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch12_Optimization_Algorithms/Optimization_And_Deep_Learning.ipynb)
+    * 12.2 Convexity
+    * 12.3 Gradient Descent
+    * 12.4 Stochastic Gradient Descent
+    * 12.5 Mini-batch Stochastic Gradient Descent
+    * 12.6 Momentum
+    * 12.7 Adagrad
+    * 12.8 RMSProp
+    * 12.9 Adadelta
+    * 12.10 Adam
 
 ## Contributing
 

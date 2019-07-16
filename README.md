@@ -82,10 +82,10 @@ Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `
     * 10.7 [Backpropagation Through Time](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Backpropagation_Through_Time.ipynb)
     * 10.8 [Gated Recurrent Units (GRU)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Gated_Recurrent_Units.ipynb)
     * 10.9 [Long Short Term Memory (LSTM)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Long_Short_Term_Memory.ipynb)
-    * 10.10 Deep Recurrent Neural Networks
+    * 10.10 [Deep Recurrent Neural Networks](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Deep_Recurrent_Neural_Networks.ipynb)
     * 10.11 Bidirectional Recurrent Neural Networks
     * 10.12 [Machine Translation and DataSets](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Machine_Translation_and_Data_Sets.ipynb)
-    * 10.13 Encoder-Decoder Architecture 
+    * 10.13 [Encoder-Decoder Architecture](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Encoder-Decoder_Architecture.ipynb) 
     * 10.14 [Sequence to Sequence](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Sequence_to_Sequence.ipynb)
     * 10.15 [Beam Search](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Beam_Search.ipynb)
 

@@ -96,7 +96,7 @@ Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `
 
   * **Ch12 Optimization Algorithms**
     * 12.1 [Optimization and Deep Learning](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch12_Optimization_Algorithms/Optimization_And_Deep_Learning.ipynb)
-    * 12.2 Convexity
+    * 12.2 [Convexity](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch12_Optimization_Algorithms/Convexity.ipynb)
     * 12.3 Gradient Descent
     * 12.4 Stochastic Gradient Descent
     * 12.5 Mini-batch Stochastic Gradient Descent

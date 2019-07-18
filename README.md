@@ -90,7 +90,7 @@ Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `
     * 10.15 [Beam Search](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Beam_Search.ipynb)
 
   * **Ch11 Attention Mechanism**
-    * 11.1 Attention Mechanism
+    * 11.1 [Attention Mechanism](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch10_Recurrent_Neural_Networks/Attention_Mechanism.ipynb)
     * 11.2 Sequence to Sequence with Attention Mechanism
     * 11.3 Transformer
 

@@ -108,7 +108,7 @@ Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `
 
 ## Contributing
 
-  * Please feel free to open a Pull Request to contribute a notebook in PyTorch for the rest of the chapters.
+  * Please feel free to open a Pull Request to contribute a notebook in PyTorch for the rest of the chapters. Before starting     out with the notebook, open an issue with the name of the notebook in order to contribute for the same. We will assign         that issue to you (if no one has been assigned earlier).
 
   * Strictly follow the naming conventions for the IPython Notebooks and the subsections.
 

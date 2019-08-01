@@ -32,7 +32,7 @@ Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `
     * 5.3 Concise Implementation of Linear Regression
     * 5.4 [Softmax Regression](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch05_Linear_Neural_Networks/Softmax_Regression.ipynb)
     * 5.5 [Image Classification Data (Fashion-MNIST)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch05_Linear_Neural_Networks/Image_Classification_Data(Fashion-MNIST).ipynb)
-    * 5.6 Implementation of Softmax Regression from Scratch
+    * 5.6 [Implementation of Softmax Regression from Scratch](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch05_Linear_Neural_Networks/Implementation_of_Softmax_Regression_from_Scratch.ipynb)
     * 5.7 Concise Implementation of Softmax Regression
 
   * **Ch06 Multilayer Perceptrons**

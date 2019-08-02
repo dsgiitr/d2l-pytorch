@@ -346,26 +346,3 @@ def train_ch10(trainer, hyperparams, data_iter, feature_dim, num_epochs=2):
                 timer.start()
     print('loss: %.3f, %.3f sec/epoch'%(animator.Y[0][-1], timer.avg()))
     return timer.cumsum(), animator.Y[0]
-
-'''def train_pytorch_ch10(optimizer, trainer_hyperparams, data_iter, num_epochs=2):
-    # Initialization
-    net = nn.Sequential()
-    net.add(nn.Dense(1))
-    net.initialize(init.Normal(sigma=0.01))
-    optimizer = optimizer(net.collect_params(), trainer_name, trainer_hyperparams), loss = gluon.loss.L2Loss()
-    animator = d2l.Animator(xlabel='epoch', ylabel='loss',
-                            xlim=[0, num_epochs], ylim=[0.22, 0.35])
-    n, timer = 0, d2l.Timer()
-    for _ in range(num_epochs):
-        for X, y in data_iter:
-            with autograd.record():
-                l = loss(net(X), y)
-            l.backward()
-            trainer.step(X.shape[0])
-            n += X.shape[0]
-            if n % 200 == 0:
-                timer.stop()
-                animator.add(n/X.shape[0]/len(data_iter),
-                             d2l.evaluate_loss(net, data_iter, loss))
-                timer.start()
-    print('loss: %.3f, %.3f sec/epoch'%(animator.Y[0][-1], timer.avg()))'''

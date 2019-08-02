@@ -2,17 +2,25 @@ import numpy as np
 import math
 import time
 
-from .base import try_gpu
-from .figure import set_figsize, plt
+from .base import try_gpu, Timer, Accumulator
+from .figure import set_figsize, plt, Animator
 from .data import data_iter_consecutive, data_iter_random
-
+from .model import linreg
 import torch
 import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
+from torch.autograd import Variable
 
-__all__ = ['evaluate_accuracy', 'squared_loss', 'grad_clipping', 'sgd', 'train_and_predict_rnn', 'train_ch3', 'train_ch5','MaskedSoftmaxCELoss','train_ch7', 'translate_ch7', 'to_onehot' , 'predict_rnn', 'train_and_predict_rnn_nn', 'predict_rnn_nn', 'grad_clipping_nn']
 
+__all__ = ['evaluate_loss', 'train_ch10', 'train_2d','evaluate_accuracy', 'squared_loss', 'grad_clipping', 'sgd', 'train_and_predict_rnn', 'train_ch3', 'train_ch5','MaskedSoftmaxCELoss','train_ch7', 'translate_ch7', 'to_onehot' , 'predict_rnn', 'train_and_predict_rnn_nn', 'predict_rnn_nn', 'grad_clipping_nn']
+
+def evaluate_loss(net, data_iter, loss):
+    """Evaluate the loss of a model on the given dataset"""
+    metric = Accumulator(2)  # sum_loss, num_examples
+    for X, y in data_iter:
+        metric.add(loss(net(X), y).sum().detach().numpy().item(), list(y.shape)[0])
+    return metric[0] / metric[1]
 
 def evaluate_accuracy(data_iter, net, device=torch.device('cpu')):
     """Evaluate accuracy of a model on the given data set."""
@@ -295,3 +303,51 @@ def train_and_predict_rnn_nn(model, num_hiddens, init_gru_state, corpus_indices,
         if epoch % (num_epochs // 2) == 0:
             for prefix in prefixes:
                 print(' -', predict_rnn_nn(prefix, 50, batch_size, num_hiddens, num_layers, model, vocab, device))
+
+def train_2d(trainer):
+    """Optimize a 2-dim objective function with a customized trainer."""
+    # s1 and s2 are internal state variables and will 
+    # be used later in the chapter
+    x1, x2, s1, s2 = -5, -2, 0, 0
+    results = [(x1, x2)]
+    for i in range(20):
+        x1, x2, s1, s2 = trainer(x1, x2, s1, s2)
+        results.append((x1, x2))
+    print('epoch %d, x1 %f, x2 %f' % (i + 1, x1, x2))
+    return results
+
+def train_ch10(trainer_fn, hyperparams, data_iter, feature_dim, num_epochs=2):
+    # Initialization
+    w1 = np.random.normal(scale=0.01, size=(feature_dim, 1))
+    b1 = np.zeros(1)
+    w = Variable(torch.from_numpy(w1), requires_grad=True)
+    b = Variable(torch.from_numpy(b1), requires_grad=True)
+
+    net, loss = lambda X: linreg(X, w, b), squared_loss
+    # Train
+    animator = Animator(xlabel='epoch', ylabel='loss',
+                            xlim=[0, num_epochs], ylim=[0.22, 0.35])
+    n, timer = 0, Timer()
+    optimizer = trainer_fn([w,b], lr=hyperparams['lr'], momentum=hyperparams['momentum'])
+
+    for _ in range(num_epochs):
+        for X, y in data_iter:
+            X, y = Variable(X), Variable(y)
+            optimizer.zero_grad()
+            output = net(X)
+            l = loss(output, y).mean()
+            l.backward()
+            optimizer.step()
+            
+            #with autograd.record():
+            #    l = loss(net(X), y).mean()
+            #l.backward()
+            #trainer_fn([w, b], states, hyperparams)
+            n += X.shape[0]
+            if n % 200 == 0:
+                timer.stop()
+                animator.add(n/X.shape[0]/len(data_iter),
+                             evaluate_loss(net, data_iter, loss))
+                timer.start()
+    print('loss: %.3f, %.3f sec/epoch'%(animator.Y[0][-1], timer.avg()))
+    return timer.cumsum(), animator.Y[0]

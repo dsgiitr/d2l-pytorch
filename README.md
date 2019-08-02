@@ -13,7 +13,7 @@ Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `
 ## Chapters
 
   * **Ch02 Installation**
-    * [Installation](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch02_Installation/Installation.ipynb)
+    * [Installation](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch02_Installation/INSTALL.md)
 
   * **Ch03 Introduction**
     * [Introduction](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch03_Introduction/Introduction.ipynb)

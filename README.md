@@ -97,10 +97,10 @@ Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `
   * **Ch12 Optimization Algorithms**
     * 12.1 [Optimization and Deep Learning](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch12_Optimization_Algorithms/Optimization_And_Deep_Learning.ipynb)
     * 12.2 [Convexity](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch12_Optimization_Algorithms/Convexity.ipynb)
-    * 12.3 Gradient Descent
+    * 12.3 [Gradient Descent](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch12_Optimization_Algorithms/Gradient_Descent.ipynb)
     * 12.4 [Stochastic Gradient Descent](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch12_Optimization_Algorithms/Stochastic_Gradient_Descent.ipynb)
     * 12.5 Mini-batch Stochastic Gradient Descent
-    * 12.6 Momentum
+    * 12.6 [Momentum](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch12_Optimization_Algorithms/Momentum.ipynb)
     * 12.7 Adagrad
     * 12.8 RMSProp
     * 12.9 Adadelta

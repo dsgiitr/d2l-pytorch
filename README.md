@@ -29,7 +29,7 @@ Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `
   * **Ch05 Linear Neural Networks**
     * 5.1 [Linear Regression](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch05_Linear_Neural_Networks/Linear_Regression.ipynb)
     * 5.2 [Linear Regression Implementation from Scratch](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch05_Linear_Neural_Networks/Linear_Regression_Implementation_from_Scratch.ipynb)
-    * 5.3 Concise Implementation of Linear Regression
+    * 5.3 [Concise Implementation of Linear Regression](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch05_Linear_Neural_Networks/Concise_Implementation_of_Linear_Regression.ipynb)
     * 5.4 [Softmax Regression](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch05_Linear_Neural_Networks/Softmax_Regression.ipynb)
     * 5.5 [Image Classification Data (Fashion-MNIST)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch05_Linear_Neural_Networks/Image_Classification_Data(Fashion-MNIST).ipynb)
     * 5.6 [Implementation of Softmax Regression from Scratch](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch05_Linear_Neural_Networks/Implementation_of_Softmax_Regression_from_Scratch.ipynb)
@@ -98,7 +98,7 @@ Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `
     * 12.1 [Optimization and Deep Learning](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch12_Optimization_Algorithms/Optimization_And_Deep_Learning.ipynb)
     * 12.2 [Convexity](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch12_Optimization_Algorithms/Convexity.ipynb)
     * 12.3 Gradient Descent
-    * 12.4 Stochastic Gradient Descent
+    * 12.4 [Stochastic Gradient Descent](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch12_Optimization_Algorithms/Stochastic_Gradient_Descent.ipynb)
     * 12.5 Mini-batch Stochastic Gradient Descent
     * 12.6 Momentum
     * 12.7 Adagrad

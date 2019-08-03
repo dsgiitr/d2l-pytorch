@@ -323,7 +323,11 @@ def train_ch10(trainer, hyperparams, data_iter, feature_dim, num_epochs=2):
     w = Variable(torch.from_numpy(w1), requires_grad=True)
     b = Variable(torch.from_numpy(b1), requires_grad=True)
 
-    optimizer = trainer([w, b], lr=hyperparams['lr'], momentum=hyperparams['momentum'])
+    if trainer.__name__ == 'SGD':
+        optimizer = trainer([w, b], lr=hyperparams['lr'], momentum=hyperparams['momentum'])
+    elif trainer.__name__ == 'RMSprop':
+        optimizer = trainer([w, b], lr=hyperparams['lr'], alpha=hyperparams['gamma'])
+
     net, loss = lambda X: linreg(X, w, b), squared_loss
     # Train
     animator = Animator(xlabel='epoch', ylabel='loss',
@@ -345,4 +349,4 @@ def train_ch10(trainer, hyperparams, data_iter, feature_dim, num_epochs=2):
                              evaluate_loss(net, data_iter, loss))
                 timer.start()
     print('loss: %.3f, %.3f sec/epoch'%(animator.Y[0][-1], timer.avg()))
-    return timer.cumsum(), animator.Y[0]
+    # return timer.cumsum(), animator.Y[0]

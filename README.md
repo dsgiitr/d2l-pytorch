@@ -4,8 +4,7 @@
 
 -----------------------------------------------------------------------------------------------------------
 
-This project is inspired of the original [Dive Into Deep Learning](https://d2l.ai) book by Aston Zhang, Zack C. Lipton, Mu Li, Alex J. Smola 
-and all the community contributors. We have made an effort to modify the book and convert the MXnet code snippets into PyTorch.
+This project is adapted from the original [Dive Into Deep Learning](https://d2l.ai) book by Aston Zhang, Zachary C. Lipton, Mu Li, Alex J. Smola and all the community contributors. We have made an effort to modify the book and convert the MXnet code snippets into PyTorch.
 
 Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `cloning` the repo or using [nbviewer](https://nbviewer.jupyter.org/) to view the notebooks.
 

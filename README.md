@@ -9,6 +9,10 @@ This project is adapted from the original [Dive Into Deep Learning](https://d2l.
 Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `cloning` the repo or using [nbviewer](https://nbviewer.jupyter.org/) to view the notebooks.
 
 
+There are some differences between the [Chinese](https://zh.d2l.ai/) and [English](https://d2l.ai/) versions of this book. For the PyTorch modifying of the Chinese version, you can refer to [this repo](https://github.com/ShusenTang/Dive-into-DL-PyTorch).
+> 此书的[中](https://zh.d2l.ai/)[英](https://d2l.ai/)版本存在一些不同，针对此书中文版的PyTorch重构可参考[这个项目](https://github.com/ShusenTang/Dive-into-DL-PyTorch)。
+
+
 ## Chapters
 
   * **Ch02 Installation**

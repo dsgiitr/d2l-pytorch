@@ -43,7 +43,7 @@ def show_bboxes(axes, bboxes, labels=None, colors=None):
     colors = _make_list(colors, ['b', 'g', 'r', 'm', 'k'])
     for i, bbox in enumerate(bboxes):
         color = colors[i % len(colors)]
-        rect = bbox_to_rect(bbox.asnumpy(), color)
+        rect = bbox_to_rect(bbox.numpy(), color)
         axes.add_patch(rect)
         if labels and len(labels) > i:
             text_color = 'k' if color == 'w' else 'w'

@@ -18,12 +18,39 @@ from matplotlib import pyplot as plt
 import d2l
 import json
 import time
-import pandas as pd
 from collections import namedtuple
 import cv2
+from IPython import display
 
 
 ##################################### Display Functions #################################################
+
+# Defined in file: ./chapter_crashcourse/probability.md
+def use_svg_display():
+    """Use the svg format to display plot in jupyter."""
+    display.set_matplotlib_formats('svg')
+
+
+# Defined in file: ./chapter_crashcourse/probability.md
+def set_figsize(figsize=(3.5, 2.5)):
+    """Change the default figure size"""
+    use_svg_display()
+    plt.rcParams['figure.figsize'] = figsize
+
+# Defined in file: ./chapter_crashcourse/naive-bayes.md
+def show_images(imgs, num_rows, num_cols, titles=None, scale=1.5):
+    """Plot a list of images."""
+    figsize = (num_cols * scale, num_rows * scale)
+    _, axes = d2l.plt.subplots(num_rows, num_cols, figsize=figsize)
+    axes = axes.flatten()
+    for i, (ax, img) in enumerate(zip(axes, imgs)):
+        ax.imshow(img.numpy())
+        ax.axes.get_xaxis().set_visible(False)
+        ax.axes.get_yaxis().set_visible(False)
+        if titles:
+            ax.set_title(titles[i])
+    return axes
+
 def read_img(img_str: str, target_size: int) -> np.ndarray:
     img = cv2.imread(img_str, cv2.IMREAD_UNCHANGED)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -55,8 +82,8 @@ def draw_grid(img: str, pixel_step: int) -> np.ndarray:
 
 def draw_text(img: str, texts: list, locations: list) -> np.ndarray:
     for text, loc in zip(texts, locations):
-        cv2.putText(img, text, (int(loc[0]-15), int(loc[1]-30)), cv2.FONT_HERSHEY_COMPLEX,
-                    0.25, (255, 0, 0), 1)
+        cv2.putText(img, text, (int(loc[0]-(loc[2]/2)-5), int(loc[1]-(loc[3]/2)-5)), cv2.FONT_HERSHEY_COMPLEX,
+                    0.3, (255, 0, 0), 1)
     return img
 
 
@@ -95,14 +122,14 @@ def non_max_suppression(bounding_boxes: list, iou_threshold: float = 0.1) -> lis
     return filtered_bb
 
 
-def infer(net, epoch, device = "cuda:0"):
+def infer(net, epoch, background_threshold=0.9, device = "cuda:0"):
     
     img = np.array(Image.open('../img/pikachu.jpg').convert('RGB').resize((256, 256), Image.BILINEAR))
     X = transforms.Compose([transforms.ToTensor()])(img).to(device)
     
     X = X.to(device)
     
-    background_threshold = 0.7
+    # background_threshold = 0.9
 
     net.eval()
     anchors, class_hat, bb_hat = net(X.unsqueeze(0))
@@ -131,12 +158,12 @@ def infer(net, epoch, device = "cuda:0"):
     class_id = class_id.detach().cpu().numpy()
 
 
-    id_cat = dict()
-    id_cat[0] = 'pikachu'
+    id_cat_pikachu = dict()
+    id_cat_pikachu[0] = 'pikachu'
     
     output_bb = [PredBoundingBox(probability=prob[i],
                                  class_id=class_id[i],
-                                 classname=id_cat[class_id[i]],
+                                 classname=id_cat_pikachu[class_id[i]],
                                  bounding_box=[bb_hat[i, 0], 
                                                bb_hat[i, 1], 
                                                bb_hat[i, 2], 
@@ -159,11 +186,6 @@ def infer(net, epoch, device = "cuda:0"):
 
 
 ########################################## Functions for downloading and preprocessing data ##############################################
-
-# Defined in file: ./chapter_crashcourse/probability.md
-def use_svg_display():
-    """Use the svg format to display plot in jupyter."""
-    display.set_matplotlib_formats('svg')
 
 
 def gen_bar_updater():
@@ -522,5 +544,146 @@ def load(model, path_to_checkpoint, optimizer):
     if optimizer is not None:
         optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
     return step
+
+
+############################ Object Detection Related Functions ##############################
+
+
+
+
+import itertools
+import math
+def MultiBoxPrior(feature_map_sizes, sizes, aspect_ratios):
+    """Compute default box sizes with scale and aspect transform."""
+    
+    sizes = [s*728 for s in sizes]
+    
+    scale = feature_map_sizes
+    steps_y = [1 / scale[0]]
+    steps_x = [1 / scale[1]]
+    
+    sizes = [s / max(scale) for s in sizes]
+    
+    num_layers = 1
+
+    boxes = []
+    for i in range(num_layers):
+        for h, w in itertools.product(range(feature_map_sizes[0]), range(feature_map_sizes[1])):
+            cx = (w + 0.5)*steps_x[i]
+            cy = (h + 0.5)*steps_y[i]
+            
+            for j in range(len(sizes)):
+
+                s = sizes[j]
+                boxes.append((cx, cy, s, s))
+
+            s = sizes[0]
+            
+            for ar in aspect_ratios:
+               
+                boxes.append((cx, cy, (s * math.sqrt(ar)), (s / math.sqrt(ar))))
+
+    return torch.Tensor(boxes) 
+
+def MultiBoxTarget(class_true, bb_true, anchors):
+    
+    class_true +=1
+    
+    class_target = torch.zeros(anchors.shape[0]).long()
+
+    overlap_list = d2l.find_overlap(bb_true, anchors, 0.5)
+    
+    overlap_coordinates = torch.zeros_like(anchors)
+    
+    for j in range(len(overlap_list)):
+        overlap = overlap_list[j]
+        class_target[overlap] = class_true[j, 0]
+        overlap_coordinates[overlap] = 1.
+        
+        
+    
+    new_anchors = torch.cat([*anchors])
+    overlap_coordinates = torch.cat([*overlap_coordinates])
+    new_anchors = new_anchors*overlap_coordinates
+    
+    return (new_anchors.unsqueeze(0), overlap_coordinates.unsqueeze(0), class_target.unsqueeze(0))
+
+
+def MultiboxDetection(id_cat, cls_probs, anchors, nms_threshold):
+
+    id_new = dict()
+    id_new[0] = 'background'
+    for i in (id_cat.keys()):
+        id_new[i+1] = id_cat[i]
+
+    cls_probs = cls_probs.transpose(0,1)
+
+    prob, class_id = torch.max(cls_probs,1)
+
+    prob = prob.detach().cpu().numpy()
+    class_id = class_id.detach().cpu().numpy()
+
+    output_bb = [d2l.PredBoundingBox(probability=prob[i],
+                                     class_id=class_id[i],
+                                     classname=id_new[class_id[i]],
+                                     bounding_box=[anchors[i, 0], 
+                                                   anchors[i, 1], 
+                                                   anchors[i, 2], 
+                                                   anchors[i, 3]])
+                                     for i in range(0, len(prob))]
+
+    filtered_bb = d2l.non_max_suppression(output_bb, nms_threshold)
+    
+    out = []
+    for bb in filtered_bb:
+        out.append([bb.class_id-1, bb.probability, *bb.bounding_box])
+    out = torch.Tensor(out)
+    
+    return out
+
+############################ Functions for Multi-Scale Object Detection Jupyter Notebook ##########################
+
+# def bbox_to_rect(bbox, color):
+#     """Convert bounding box to matplotlib format."""
+#     return d2l.plt.Rectangle(xy=(bbox[0], bbox[1]), width=bbox[2]-bbox[0],
+#                          height=bbox[3]-bbox[1], fill=False, edgecolor=color,
+#                          linewidth=2)
+
+# def show_bboxes(axes, bboxes, labels=None, colors=None):
+#     """Show bounding boxes."""
+#     def _make_list(obj, default_values=None):
+#         if obj is None:
+#             obj = default_values
+#         elif not isinstance(obj, (list, tuple)):
+#             obj = [obj]
+#         return obj
+#     labels = _make_list(labels)
+#     colors = _make_list(colors, ['b', 'g', 'r', 'm', 'c'])
+#     for i, bbox in enumerate(bboxes):
+#         color = colors[i % len(colors)]
+#         rect = bbox_to_rect(bbox.numpy(), color)
+#         axes.add_patch(rect)
+#         if labels and len(labels) > i:
+#             text_color = 'k' if color == 'w' else 'w'
+#             axes.text(rect.xy[0], rect.xy[1], labels[i],
+#                       va='center', ha='center', fontsize=9, color=text_color,
+#                       bbox=dict(facecolor=color, lw=0))
+
+def get_centers(h, w, fh, fw):
+    step_x = int(w/fw)
+    cx = []
+    for i in range(fw):
+        cx.append((step_x*i + step_x*(i+1))/2)
+    
+    step_y = int(h/fh)
+    cy = []
+    for j in range(fh):
+        cy.append((step_y*j + step_y*(j+1))/2)
+    cxcy = []
+    for x in cx:
+        for y in cy:
+            cxcy.append([x, y])
+    
+    return np.array(cxcy).astype(np.int16)
 
 ####################################################################################################################################

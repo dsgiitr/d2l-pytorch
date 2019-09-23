@@ -107,12 +107,18 @@ Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `
   * **Ch14 Computer Vision**
     * 14.1 Image Augmentation
     * 14.2 Fine Tuning
-    * 14.3 [Object Detection and Bounding Boxes](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch14_Computer_Vision/bounding-box.ipynb)
-    * 14.4 [Anchor Boxes](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch14_Computer_Vision/anchor.ipynb)
-    * 14.5 [Multiscale Object Detection](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch14_Computer_Vision/multiscale-object-detection.ipynb)
-    * 14.6 [Object Detection Data Set (Pikachu)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch14_Computer_Vision/object-detection-dataset.ipynb)
-    * 14.7 [Single Shot Multibox Detection (SSD)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch14_Computer_Vision/ssd.ipynb)
+    * 14.3 [Object Detection and Bounding Boxes](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch14_Computer_Vision/Object_Detection_and_Bounding_Boxes.ipynb)
+    * 14.4 [Anchor Boxes](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch14_Computer_Vision/Anchor_Boxes.ipynb)
+    * 14.5 [Multiscale Object Detection](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch14_Computer_Vision/Multiscale_Object_Detection.ipynb)
+    * 14.6 [Object Detection Data Set (Pikachu)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch14_Computer_Vision/Object_Detection_Data_Set.ipynb)
+    * 14.7 [Single Shot Multibox Detection (SSD)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch14_Computer_Vision/Single_Shot_Multibox_Detection.ipynb)
+    * 14.8 Region-based CNNs (R-CNNs)
+    * 14.9 Semantic Segmentation and Data Sets
+    * 14.10 Transposed Convolution
+    * 14.11 Fully Convolutional Networks (FCN)
     * 14.12 [Neural Style Transfer](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch14_Computer_Vision/Neural_Style_Transfer.ipynb)
+    * 14.13 Image Classification (CIFAR-10) on Kaggle
+    * 14.14 Dog Breed Identification (ImageNet Dogs) on Kaggle
 
 ## Contributing
 

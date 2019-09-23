@@ -105,13 +105,14 @@ Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `
     * 12.9 Adadelta
     * 12.10 Adam
   * **Ch14 Computer Vision**
-    * 14.1 [Image Augmentation]
-    * 14.2 [Fine Tuning]
+    * 14.1 Image Augmentation
+    * 14.2 Fine Tuning
     * 14.3 [Object Detection and Bounding Boxes](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch14_Computer_Vision/bounding-box.ipynb)
     * 14.4 [Anchor Boxes](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch14_Computer_Vision/anchor.ipynb)
     * 14.5 [Multiscale Object Detection](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch14_Computer_Vision/multiscale-object-detection.ipynb)
     * 14.6 [Object Detection Data Set (Pikachu)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch14_Computer_Vision/object-detection-dataset.ipynb)
     * 14.7 [Single Shot Multibox Detection (SSD)](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch14_Computer_Vision/ssd.ipynb)
+    * 14.12 [Neural Style Transfer](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch14_Computer_Vision/Neural_Style_Transfer.ipynb)
 
 ## Contributing
 

@@ -1,0 +1,6 @@
+matplotlib==3.2.1  
+numpy==1.14.3
+ConfigArgParse==1.2
+torch==1.5.0
+torchvision==0.6.0
+tqdm==4.45.0

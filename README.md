@@ -105,7 +105,7 @@ Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `
     * 12.9 Adadelta
     * 12.10 Adam
   * **Ch14 Computer Vision**
-    * 14.1 Image Augmentation
+    * 14.1 [Image Augmentation](https://github.com/ShambhaviCodes/d2l-pytorch/blob/master/Ch14_Computer_Vision/Image_Augmentation.ipynb)
     * 14.2 Fine Tuning
     * 14.3 [Object Detection and Bounding Boxes](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch14_Computer_Vision/Object_Detection_and_Bounding_Boxes.ipynb)
     * 14.4 [Anchor Boxes](https://github.com/dsgiitr/d2l-pytorch/blob/master/Ch14_Computer_Vision/Anchor_Boxes.ipynb)

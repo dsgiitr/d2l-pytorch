@@ -141,6 +141,19 @@ Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `
 
 If you like this repo and find it useful, please consider (★) starring it, so that it can reach a broader audience.
 
+## Installation
+Many of you will not have Python 3.6 already installed on your computers. Conda is an easy way to manage many different environments, each with its own Python versions and dependencies. This allows us to avoid conflicts between our preferred Python version and that of other classes. We’ll walk through how to set up and use a conda environment.
+
+Prerequisite: Anaconda. Many of you will have it installed from classes such as EE 16A; if you don’t, install it through the link.
+### Creating a Conda Environment
+  conda create --name <env-name> python=3.6
+
+### Entering the Environment
+  conda activate <env-name>
+where <env-name> is any name you want.
+
+### Setting the Environment
+  pip install -r requirements.txt
 
 ## References
 

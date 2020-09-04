@@ -17,7 +17,6 @@ Prerequisite: Anaconda. Many of you will have it installed from classes such as 
 
 ### Entering the Environment
   ```conda activate <env-name>```
-where <env-name> is any name you want.
 
 ### Setting the Environment
   ```pip install -r requirements.txt```

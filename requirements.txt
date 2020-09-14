@@ -37,9 +37,10 @@ nbconvert==6.0.2
 nbformat==5.0.7
 nest-asyncio==1.4.0
 notebook==6.1.4
-numpy==1.14.3
+numpy==1.19.2
 opencv-python==4.4.0.42
 packaging==20.4
+pandas==1.1.2
 pandocfilters==1.4.2
 pexpect==4.8.0
 pickleshare==0.7.5
@@ -54,8 +55,10 @@ pyparsing==2.4.7
 pyrsistent==0.17.3
 PySocks==1.7.1
 python-dateutil==2.8.1
+pytz==2020.1
 pyzmq==19.0.2
 requests==2.24.0
+scipy==1.5.2
 Send2Trash==1.5.0
 simplegeneric==0.8.1
 six==1.15.0

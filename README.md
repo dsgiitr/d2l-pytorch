@@ -4,6 +4,8 @@
 
 -----------------------------------------------------------------------------------------------------------
 
+**UPDATE: Please see the [orignal repo](https://github.com/d2l-ai/d2l-en) for the complete PyTorch port. We no longer maintain this repo.**
+
 This project is adapted from the original [Dive Into Deep Learning](https://d2l.ai) book by Aston Zhang, Zachary C. Lipton, Mu Li, Alex J. Smola and all the community contributors. GitHub of the original book: [https://github.com/d2l-ai/d2l-en](https://github.com/d2l-ai/d2l-en). We have made an effort to modify the book and convert the MXnet code snippets into PyTorch.
 
 Note: Some ipynb notebooks may not be rendered perfectly in Github. We suggest `cloning` the repo or using [nbviewer](https://nbviewer.jupyter.org/) to view the notebooks.
